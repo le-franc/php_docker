@@ -1,0 +1,8 @@
+#Montar a imagem
+docker build -t --no-cache php74/php-fpm .
+
+#Testar a imagem
+docker container run -it php74/php-fpm
+
+#Subir os containers
+docker-compose up -d --build
